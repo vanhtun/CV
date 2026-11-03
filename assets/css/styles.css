@@ -17,8 +17,13 @@
   --color-accent: #7c3aed;       /* tím nhấn */
   --color-text: #1e293b;         /* chữ chính */
   --color-text-soft: #64748b;    /* chữ phụ */
+<<<<<<< HEAD
   --color-bg: #ffffff;           /* nền trang */
   --color-surface: #f8fafc;      /* nền vùng nhấn */
+=======
+  --color-bg: #e08b8b;           /* nền trang */
+  --color-surface: #587fa7;      /* nền vùng nhấn */
+>>>>>>> fdc5dcbfbb5e8df463a508f37b3d02d1f8f8ccb1
   --color-border: #e2e8f0;       /* viền */
   --color-chip: #eff6ff;         /* nền chip kỹ năng */
 
@@ -453,6 +458,7 @@ ul {
     scroll-behavior: auto !important;
   }
 }
+<<<<<<< HEAD
 
 /* Developer portfolio theme */
 :root {
@@ -735,3 +741,5 @@ body {
 .form-field textarea:focus { border-color: var(--color-primary); outline: 2px solid rgba(100, 244, 172, 0.18); }
 .contact-form .btn { justify-self: start; border: 0; cursor: pointer; font: inherit; font-weight: 700; }
 .form-note { color: var(--color-text-soft); font-size: 0.82rem; }
+=======
+>>>>>>> fdc5dcbfbb5e8df463a508f37b3d02d1f8f8ccb1
