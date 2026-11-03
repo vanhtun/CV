@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV của VÌ ANH TUẤN  – Frontend Developer. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="VÌ ANH TUẤN" />
+  <title>VÌ ANH TUẤN · Frontend Developer</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+       
+       
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là</p>
+          <h1 class="hero-title">VÌ ANH TUẤN</h1>
+          <p class="hero-role">Frontend Developer &amp; UI Enthusiast</p>
+          <p class="hero-desc">
+            Tôi xây dựng giao diện web sạch sẽ, dễ tiếp cận và responsive.
+            Tốt nghiệp ngành Công nghệ thông tin, yêu thích HTML/CSS ngữ nghĩa
+            và trải nghiệm người dùng tối giản.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img
+            src="./assets/img/anh1.jpg"
+            alt="Ảnh đại diện của VÌ ANH TUẤN"
+            width="320" height="320" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi sử dụng thường xuyên.</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">HTML5</li>
+          <li class="skill-chip">CSS3 / Flexbox / Grid</li>
+          <li class="skill-chip">JavaScript (ES6+)</li>
+          <li class="skill-chip">Responsive Design</li>
+          <li class="skill-chip">Git &amp; GitHub</li>
+          <li class="skill-chip">Figma / Wireframe</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-sub">Một vài sản phẩm tôi đã thực hiện.</p>
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/anh2.jpg"
+              alt="Ảnh minh họa dự án Landing Page" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Landing Page Sản Phẩm</h3>
+              <p class="card-desc">
+                Trang giới thiệu sản phẩm responsive, tối ưu tốc độ tải và SEO cơ bản.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Grid</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/anh3.jpg"
+              alt="Ảnh minh họa dự án Todo App" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ứng dụng Todo List</h3>
+              <p class="card-desc">
+                Ứng dụng quản lý công việc với lưu trữ cục bộ và giao diện tối giản.
+              </p>
+              <ul class="tag-list">
+                <li>JavaScript</li>
+                <li>Flexbox</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/anh4.jpg"
+              alt="Ảnh minh họa dự án Weather Dashboard" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Weather Dashboard</h3>
+              <p class="card-desc">
+                Bảng điều khiển thời tiết lấy dữ liệu từ API công khai, hiển thị theo thẻ.
+              </p>
+              <ul class="tag-list">
+                <li>API</li>
+                <li>Grid</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/anh5.jpg"
+            <div class="card-body">
+              <h3 class="card-title">Blog Cá Nhân</h3>
+              <p class="card-desc">
+                Blog tĩnh với bố cục dạng lưới, hỗ trợ đọc tốt trên mọi thiết bị.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Liên hệ ----- -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Liên hệ</h2>
+        <p class="section-sub">Mở cho các cơ hội thực tập &amp; việc làm Frontend.</p>
+
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span> <a href="mailto:vanhtunn@gmail.com">vanhtunn@gmail.com</a></li>
+          <li><span class="contact-label">GitHub</span> <a href="#">github.com/vanhtun/CV</a></li>
+          <li><span class="contact-label">LinkedIn</span> <a href="#">linkedin.com/in/vanhtunn</a></li>
+          <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Visual Studio Code</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            --bg-dark: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ambient Background Glowing Orbs */
+        .ambient-glow {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: 0;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .glow-1 {
+            top: 10%;
+            left: 15%;
+            background: #6366f1;
+        }
+        .glow-2 {
+            bottom: 10%;
+            right: 15%;
+            background: #ec4899;
+        }
+
+        /* Section Container */
+        .contact-section {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-header .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 30px;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #818cf8;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-header h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .contact-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        /* Main Card Container */
+        .contact-card-wrapper {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Left Info Side */
+        .contact-info-panel {
+            padding: 50px 40px;
+            background: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .info-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .info-list {
+            margin: 40px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #818cf8;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover .icon-box {
+            background: var(--primary-gradient);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .info-text span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 2px;
+        }
+
+        .info-text strong {
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background: #fff;
+            color: var(--bg-dark);
+            transform: scale(1.1);
+        }
+
+        /* Right Form Side */
+        .contact-form-panel {
+            padding: 50px 40px;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: var(--text-main);
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group label {
+            position: absolute;
+            left: 20px;
+            top: 16px;
+            color: var(--text-muted);
+            pointer-events: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        /* Floating Label Effect */
+        .form-group input:focus ~ label,
+        .form-group input:valid ~ label,
+        .form-group textarea:focus ~ label,
+        .form-group textarea:valid ~ label {
+            top: -10px;
+            left: 14px;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            background: #1e293b;
+            border-radius: 4px;
+            color: #818cf8;
+            font-weight: 600;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #818cf8;
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+        }
+
+        /* Gradient Button */
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: var(--primary-gradient);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .submit-btn:hover {
+            opacity: 0.95;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        .submit-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .submit-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 868px) {
+            .contact-card-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .contact-info-panel {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .contact-header h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Glow Effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-header">
+            <span class="badge">Liên Hệ</span>
+            <h2>Get In Touch</h2>
+            <p>Chúng tôi luôn sẵn sàng lắng nghe ý kiến và hỗ trợ bạn mọi lúc. Hãy gửi tin nhắn cho chúng tôi!</p>
+        </div>
+
+        <div class="contact-card-wrapper">
+            <!-- Thông tin liên hệ (Bên trái) -->
+            <div class="contact-info-panel">
+                <div class="info-header">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <p>Hãy liên hệ trực tiếp qua thông tin bên dưới hoặc điền vào biểu mẫu.</p>
+                </div>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <span>Địa chỉ</span>
+                            <strong>Hà Nội, Việt Nam</strong>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text">
+                            <span>Điện thoại</span>
+                            <strong>0835 442 008</strong>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <span>Email</span>
+                            <strong>vanhtunn@gmail.com</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Form nhắn tin (Bên phải) -->
+            <div class="contact-form-panel">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" required autocomplete="off">
+                        <label for="name">Họ và tên</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" required autocomplete="off">
+                        <label for="email">Địa chỉ Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Nội dung tin nhắn...</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Gửi Tin Nhắn</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const btn = document.querySelector('.submit-btn');
+            btn.innerHTML = '<span>Đang gửi...</span> <i class="fas fa-spinner fa-spin"></i>';
+            btn.style.opacity = '0.7';
+
+            // Giả lập gửi form thành công
+            setTimeout(() => {
+                btn.innerHTML = '<span>Đã Gửi Thành Công!</span> <i class="fas fa-check"></i>';
+                btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                document.getElementById('contactForm').reset();
+
+                // Khôi phục lại nút sau 3 giây
+                setTimeout(() => {
+                    btn.innerHTML = '<span>Gửi Tin Nhắn</span> <i class="fas fa-paper-plane"></i>';
+                    btn.style.background = 'var(--primary-gradient)';
+                    btn.style.opacity = '1';
+                }, 3000);
+            }, 1200);
+        }
+    </script>
+</body>
+</html>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  
+    
+     
+    </div>
+  </footer>
+
+</body>
+
+</html>
